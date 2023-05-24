@@ -1,16 +1,7 @@
 # shoping_app
 
-A new Flutter project.
+simple shopping app design
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![home](https://github.com/Muneef-Nk/flutter_shopping_app_ui/assets/92105703/6c9ac37d-6d3b-4f74-9d89-043a5cf7fa3c)
+![details](https://github.com/Muneef-Nk/flutter_shopping_app_ui/assets/92105703/65624900-4a1e-4065-b5d3-74a5217ff724)
