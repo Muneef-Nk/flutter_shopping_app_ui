@@ -77,7 +77,7 @@ class HomeBody extends StatelessWidget {
                     HolyDayCard(size: '34mm', title: 'Watch', img: 'assets/images/i.jpg', price: 91,),
                     HolyDayCard(size: '31mm', title: 'Watch', img: 'assets/images/o.jpg', price: 34,),
                     HolyDayCard(size: '38mm', title: 'Watch', img: 'assets/images/b.jpg', price: 80,),
-                    HolyDayCard(size: '35mm', title: 'Watch', img: 'assets/images/b.jpg', price: 87,),
+                    HolyDayCard(size: '38mm', title: 'Watch', img: 'assets/images/m.jpg', price: 80,),
                   ],
                 ),
               )
@@ -101,7 +101,7 @@ class HomeBody extends StatelessWidget {
           width: 5,
           height: 5,
           decoration:
-              BoxDecoration(color:  isMenuSelected? Colors.pink[200]: Colors.grey[200], shape: BoxShape.circle),
+              BoxDecoration(color:  isMenuSelected? Colors.red: Colors.grey[200], shape: BoxShape.circle),
         )
       ],
     );

@@ -92,7 +92,7 @@ class _ScreenHomeState extends State<ScreenHome> {
               ? [BoxShadow(color: Colors.grey, spreadRadius: 3, blurRadius: 7)]
               : [],
           shape: BoxShape.circle,
-          color: isSelected ? Colors.pink[200] : Colors.white),
+          color: isSelected ? Colors.pink : Colors.white),
       child: Icon(buttonIcon, color: isSelected ? Colors.white : Colors.black),
     );
   }
@@ -102,7 +102,7 @@ class _ScreenHomeState extends State<ScreenHome> {
       style: ButtonStyle(
           shape: const MaterialStatePropertyAll(StadiumBorder()),
           backgroundColor: MaterialStatePropertyAll(
-              isSelected ? Colors.pink[200] : Colors.grey)),
+              isSelected ? Colors.pink : Colors.grey[600])),
       onPressed: () {
         setState(() {
           isSelected = true;
