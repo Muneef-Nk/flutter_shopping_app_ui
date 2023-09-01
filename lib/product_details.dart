@@ -7,13 +7,13 @@ class ProductDetails extends StatelessWidget {
   final String size;
   final BuildContext context;
 
-  const ProductDetails({super.key,
-    required this.price,
-    required this.context,
-    required this.title,
-    required this.size,
-    required this.img
-  });
+  const ProductDetails(
+      {super.key,
+      required this.price,
+      required this.context,
+      required this.title,
+      required this.size,
+      required this.img});
 
   @override
   Widget build(BuildContext context) {
@@ -22,14 +22,8 @@ class ProductDetails extends StatelessWidget {
         children: [
           Image.asset(
             img,
-            width: MediaQuery
-                .of(context)
-                .size
-                .width,
-            height: MediaQuery
-                .of(context)
-                .size
-                .height / 1.5,
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height / 1.5,
             fit: BoxFit.cover,
           ),
           Padding(
@@ -63,14 +57,17 @@ class ProductDetails extends StatelessWidget {
                             style: TextStyle(color: Colors.black87),
                           ),
                         ),
-                        SizedBox(height: 5,),
+                        SizedBox(
+                          height: 6,
+                        ),
                         Padding(
                           padding: const EdgeInsets.only(left: 20, right: 20),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                title, style: TextStyle(fontSize: 25),
+                                title,
+                                style: TextStyle(fontSize: 25),
                               ),
                               Text(
                                 '\$$price',
@@ -89,32 +86,44 @@ class ProductDetails extends StatelessWidget {
                             children: [
                               Expanded(
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text('size',style: TextStyle(fontSize: 13)),
-                                      SizedBox(height: 6,),
-                                      Text('$size', style: TextStyle(fontSize: 18,
-                                          )),
-                                    ],
-                                  )),
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('size', style: TextStyle(fontSize: 13)),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
+                                  Text('$size',
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                      )),
+                                ],
+                              )),
                               Expanded(
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text('QTY', style: TextStyle(fontSize: 13)), SizedBox(height: 6,
-                                      ),
-                                      Text('1',
-                                          style: TextStyle(
-                                              fontSize: 18,
-                                              fontWeight: FontWeight.bold)),
-                                    ],
-                                  ))
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('QTY', style: TextStyle(fontSize: 13)),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
+                                  Text('1',
+                                      style: TextStyle(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold)),
+                                ],
+                              ))
                             ],
                           ),
                         ),
-                        SizedBox(height: 5,),
-                        Divider(thickness: 2,),
-                        SizedBox(height: 5,),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Divider(
+                          thickness: 2,
+                        ),
+                        SizedBox(
+                          height: 5,
+                        ),
                         Padding(
                           padding: const EdgeInsets.only(left: 20, right: 20),
                           child: Row(
@@ -126,9 +135,15 @@ class ProductDetails extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(height: 5,),
-                        Divider(thickness: 2,),
-                        SizedBox(height: 5,),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Divider(
+                          thickness: 2,
+                        ),
+                        SizedBox(
+                          height: 5,
+                        ),
                         Padding(
                           padding: const EdgeInsets.only(left: 20, right: 20),
                           child: Row(
@@ -140,7 +155,9 @@ class ProductDetails extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(height: 5,),
+                        SizedBox(
+                          height: 5,
+                        ),
                         Divider(
                           thickness: 2,
                         ),
@@ -166,14 +183,11 @@ class ProductDetails extends StatelessWidget {
                             padding: MaterialStatePropertyAll(
                                 EdgeInsets.symmetric(
                                     horizontal:
-                                    MediaQuery
-                                        .of(context)
-                                        .size
-                                        .width / 4,
+                                        MediaQuery.of(context).size.width / 4,
                                     vertical: 13)),
                             shape: MaterialStatePropertyAll(StadiumBorder()),
                             backgroundColor:
-                            MaterialStatePropertyAll(Colors.pink),
+                                MaterialStatePropertyAll(Colors.pink),
                           ),
                           onPressed: () {},
                           icon: Icon(
